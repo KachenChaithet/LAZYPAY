@@ -7,7 +7,11 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   preview: {
     port: parseInt(process.env.PORT) || 10000,
-    host: true,
-    allowedHosts: 'all'
+    host: '0.0.0.0',
+    allowedHosts: [
+      'lazypay.onrender.com',
+      '.onrender.com',
+      'localhost'
+    ]
   }
 })
