@@ -10,7 +10,7 @@ function App() {
 
   const handleCreateQrCode = async () => {
     try {
-      const response = await axios.post('https://lazypay.onrender.com/generate-qr', { amount: Amount })
+      const response = await axios.post('https://lazypay-backend.onrender.com/generate-qr', { amount: Amount })
       setQr(response.data)
     } catch (error) {
       return console.log(error);
