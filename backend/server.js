@@ -8,7 +8,7 @@ const app = express()
 dotenv.config()
 
 app.use(express.json())
-app.use(cors({ origin: 'http://localhost:5173' }))
+app.use(cors({ origin: 'https://frontend-yourapp.onrender.com'}))
 
 
 const port = process.env.PORT
