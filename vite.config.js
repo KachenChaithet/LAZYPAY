@@ -8,6 +8,9 @@ export default defineConfig({
   preview: {
     port: parseInt(process.env.PORT) || 10000,
     host: '0.0.0.0',
-    allowedHosts: ['lazypay.onrender.com', '.onrender.com']
+    strictPort: false
+  },
+  server: {
+    host: '0.0.0.0'
   }
 })
